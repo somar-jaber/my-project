@@ -1,22 +1,80 @@
-# RESTFull API
-This is a simple API has made for the job interview for Effective Mobile company.
 
+# RESTFull API  
+Этот простой API был создан для собеседования в компании Effective Mobile.  
+В проекте используются:
 
-## How to install and run
-First after cloning the project you need to have node.js and npm installed then run :
+- Node.js с фреймворком Express.js  
+- Онлайн‑сервер PostgreSQL (Neon)  
+  *(не нужно настраивать базу данных — она уже работает онлайн, строка подключения создаётся автоматически, ниже это объясняется)*  
+- Prisma в качестве ORM  
+- JWT как метод аутентификации с использованием режима **“HTTPS Only”**, чтобы запретить клиентскому HTML доступ к токену  
+- Библиотека Zod для валидации  
+- Winston и Morgan для логирования  
+
+**Примечание:** API имеет систему устойчивости — он **не завершит работу при ошибке**, а запишет её в файл `/logs/error.log/`.
+
+---
+
+## Как установить и запустить
+После клонирования проекта убедитесь, что у вас установлены Node.js и npm, затем выполните:
+
 ```bash
 npm install
 ```
 
-Scondly :
-Then to set up the envirunment variables run:
+### Далее  
+Чтобы создать файл окружения, выполните:
+
 ```bash
 npm run setup
 ```
-This will make the `.env` file , but you need to fullfill the values of the variables.
 
+Эта команда создаст файл `.env`, но вам нужно будет заполнить значения переменных.  
+Строка подключения к базе данных создаётся автоматически, поэтому **вам не нужно прописывать её вручную**.  
+База данных находится онлайн — локальный PostgreSQL не требуется.
 
-And Finally to run it :
+### Запуск в режиме разработки (с Nodemon)
 ```bash
 npm run dev
 ```
+
+### Запуск в продакшене
+```bash
+npm start
+```
+
+---
+
+## Запуск миграций
+```bash
+npm run migrate --name=create_users_table
+```
+
+Эта команда фактически выполняет две:
+
+```bash
+npx prisma migrate dev --name the_name_of_the_migration
+```
+
+```bash
+npx prisma generate
+```
+
+---
+
+## Вход под администратором
+Отправьте `POST`‑запрос на `localhost:ваш_порт/api/auth`, тело запроса должно быть таким:
+
+```json
+{
+      "name": "user1",
+      "dateOfBirth": "2000-07-10",
+      "email": "user1@gmail.com",
+      "password": "user1user1"
+}
+```
+
+---
+
+## Маршруты
+Все маршруты перечислены в файле `/Routes.md`.
