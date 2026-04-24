@@ -1,0 +1,110 @@
+[2026-04-22T22:43:59.882Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         password: "$2b$10$nGpl4YhPjdEXnq8Yop5yc.R3xKWS.oWGAIxvYMu01ZHILlTDWq27m",
+     +   dateOfBirth: String
+       }
+     })
+
+Argument `dateOfBirth` is missing.
+[2026-04-22T22:44:22.414Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         password: "$2b$10$gwnmbUI1pTRzb2qGAvCZ9u10cehty3yd/FvSCcg/8OLjeMH33cFye",
+     +   dateOfBirth: String
+       }
+     })
+
+Argument `dateOfBirth` is missing.
+[2026-04-22T23:57:50.334Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         password: "$2b$10$yritmgEhzEUpNHAKF0sq1.X.diWxS1UWphmOcZks297sARN0ULtK2",
+     +   dateOfBirth: String
+       }
+     })
+
+Argument `dateOfBirth` is missing.
+[2026-04-23T00:28:10.425Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         dateOfBirth: "2004-03-17",
+         password: "$2b$10$qL4iyjADRMh3UgzTV0Z/ke/nbCHap.lzYA585UY1Gu0QEPEtu6ywm",
+     +   userStatus: UserStatus
+       }
+     })
+
+Argument `userStatus` is missing.
+[2026-04-23T00:29:34.482Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         dateOfBirth: "2004-03-17",
+         password: "$2b$10$5yPIRkVNCX66x/vG8yEHtejXQEuQQa/JlwZcTE2i5iR5Ek80EOdzO",
+         role: undefined,
+         userStatus: "active"
+                     ~~~~~~~~
+       }
+     })
+
+Invalid value for argument `userStatus`. Expected UserStatus.
+[2026-04-23T00:30:55.055Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user2",
+         email: "user2@gmail.com",
+         dateOfBirth: "2004-03-17",
+         password: "$2b$10$udRszTL1nab/BEp2Qp0dYOS3FcVBp3/1f4mV/t3VjjaSouDx1yUBW",
+         role: undefined,
+         userStatus: "active"
+                     ~~~~~~~~
+       }
+     })
+
+Invalid value for argument `userStatus`. Expected UserStatus.
+[2026-04-23T01:17:44.232Z] ERROR: 

@@ -1,0 +1,306 @@
+[2026-04-22T22:41:25.039Z] INFO: ::ffff:127.0.0.1 - - [22/Apr/2026:22:41:25 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-22T22:42:35.422Z] INFO: ::ffff:127.0.0.1 - - [22/Apr/2026:22:42:35 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-22T22:43:59.882Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         password: "$2b$10$nGpl4YhPjdEXnq8Yop5yc.R3xKWS.oWGAIxvYMu01ZHILlTDWq27m",
+     +   dateOfBirth: String
+       }
+     })
+
+Argument `dateOfBirth` is missing.
+[2026-04-22T22:43:59.885Z] INFO: ::ffff:127.0.0.1 - - [22/Apr/2026:22:43:59 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-22T22:44:22.414Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         password: "$2b$10$gwnmbUI1pTRzb2qGAvCZ9u10cehty3yd/FvSCcg/8OLjeMH33cFye",
+     +   dateOfBirth: String
+       }
+     })
+
+Argument `dateOfBirth` is missing.
+[2026-04-22T22:44:22.415Z] INFO: ::ffff:127.0.0.1 - - [22/Apr/2026:22:44:22 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-22T23:57:50.334Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         password: "$2b$10$yritmgEhzEUpNHAKF0sq1.X.diWxS1UWphmOcZks297sARN0ULtK2",
+     +   dateOfBirth: String
+       }
+     })
+
+Argument `dateOfBirth` is missing.
+[2026-04-22T23:57:50.536Z] INFO: ::ffff:127.0.0.1 - - [22/Apr/2026:23:57:50 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-22T23:59:03.297Z] INFO: ::ffff:127.0.0.1 - - [22/Apr/2026:23:59:03 +0000] "POST /api/auth/register HTTP/1.1" 400 167 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:09:00.486Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:09:00 +0000] "POST /api/auth/register HTTP/1.1" 400 1307 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:09:08.330Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:09:08 +0000] "POST /api/auth/register HTTP/1.1" 400 252 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:10:31.899Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:10:31 +0000] "POST /api/auth/register HTTP/1.1" 400 252 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:13:42.558Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:13:42 +0000] "POST /api/auth/register HTTP/1.1" 400 115 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:14:36.025Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:14:36 +0000] "POST /api/auth/register HTTP/1.1" 400 115 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:17:07.023Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:17:07 +0000] "POST /api/auth/register HTTP/1.1" 400 260 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:17:55.748Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:17:55 +0000] "POST /api/auth/register HTTP/1.1" 400 260 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:19:57.181Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:19:57 +0000] "POST /api/auth/register HTTP/1.1" 400 272 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:20:38.135Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:20:38 +0000] "POST /api/auth/register HTTP/1.1" 400 274 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:21:16.865Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:21:16 +0000] "POST /api/auth/register HTTP/1.1" 400 274 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:21:30.986Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:21:30 +0000] "POST /api/auth/register HTTP/1.1" 400 115 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:22:15.775Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:22:15 +0000] "POST /api/auth/register HTTP/1.1" 400 157 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:25:30.221Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:25:30 +0000] "POST /api/auth/register HTTP/1.1" 400 157 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:25:33.925Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:25:33 +0000] "POST /api/auth/register HTTP/1.1" 400 157 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:25:53.169Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:25:53 +0000] "POST /api/auth/register HTTP/1.1" 400 157 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:27:09.848Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:27:09 +0000] "POST /api/auth/register HTTP/1.1" 400 58 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:28:00.319Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:28:00 +0000] "POST /api/auth/register HTTP/1.1" 400 1307 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:28:10.425Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         dateOfBirth: "2004-03-17",
+         password: "$2b$10$qL4iyjADRMh3UgzTV0Z/ke/nbCHap.lzYA585UY1Gu0QEPEtu6ywm",
+     +   userStatus: UserStatus
+       }
+     })
+
+Argument `userStatus` is missing.
+[2026-04-23T00:28:10.426Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:28:10 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:29:34.482Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user1",
+         email: "user1@gmail.com",
+         dateOfBirth: "2004-03-17",
+         password: "$2b$10$5yPIRkVNCX66x/vG8yEHtejXQEuQQa/JlwZcTE2i5iR5Ek80EOdzO",
+         role: undefined,
+         userStatus: "active"
+                     ~~~~~~~~
+       }
+     })
+
+Invalid value for argument `userStatus`. Expected UserStatus.
+[2026-04-23T00:29:34.488Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:29:34 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:30:12.603Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:30:12 +0000] "POST /api/auth/register HTTP/1.1" 201 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:30:33.096Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:30:33 +0000] "POST /api/auth/register HTTP/1.1" 400 100 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T00:30:55.055Z] ERROR: Prisma error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\Somar-j\Desktop\Folders\task for job\Nodejs_task\controllers\authController.js:24:36
+
+  21 const hashPassword = await bcrypt.hash(req.body.password, salt);
+  22 
+  23 // creating user | Создание пользователя
+→ 24 const user = await prisma.user.create({
+       data: {
+         name: "user2",
+         email: "user2@gmail.com",
+         dateOfBirth: "2004-03-17",
+         password: "$2b$10$udRszTL1nab/BEp2Qp0dYOS3FcVBp3/1f4mV/t3VjjaSouDx1yUBW",
+         role: undefined,
+         userStatus: "active"
+                     ~~~~~~~~
+       }
+     })
+
+Invalid value for argument `userStatus`. Expected UserStatus.
+[2026-04-23T00:30:55.057Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:00:30:55 +0000] "POST /api/auth/register HTTP/1.1" 500 48 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:10:29.739Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:10:29 +0000] "POST /api/auth/register HTTP/1.1" 500 730 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:13:02.425Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:13:02 +0000] "POST /api/auth/register HTTP/1.1" 500 730 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:17:44.232Z] ERROR: 
+[2026-04-23T01:17:44.240Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:17:44 +0000] "POST /api/auth/register HTTP/1.1" 500 60 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:18:28.060Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:18:28 +0000] "POST /api/auth/register HTTP/1.1" 400 93 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:18:47.641Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:18:47 +0000] "POST /api/auth/register HTTP/1.1" 400 1307 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:18:54.952Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:18:54 +0000] "POST /api/auth/register HTTP/1.1" 400 61 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:19:42.960Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:19:42 +0000] "POST /api/auth/register HTTP/1.1" 400 63 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:19:50.618Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:19:50 +0000] "POST /api/auth/register HTTP/1.1" 400 229 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:20:04.770Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:20:04 +0000] "POST /api/auth/register HTTP/1.1" 201 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:20:29.040Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:20:29 +0000] "POST /api/auth/login HTTP/1.1" 404 154 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:20:37.368Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:20:37 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:20:43.995Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:20:43 +0000] "POST /api/auth/ HTTP/1.1" 401 106 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:20:53.345Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:20:53 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:21:03.344Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:21:03 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:35:19.489Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:35:19 +0000] "GET /api/users/1 HTTP/1.1" 401 96 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:35:33.951Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:35:33 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:35:46.763Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:35:46 +0000] "GET /api/users/1 HTTP/1.1" 400 374 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:36:42.161Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:36:42 +0000] "GET /api/users/1 HTTP/1.1" 200 234 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:36:48.762Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:36:48 +0000] "GET /api/users/2 HTTP/1.1" 200 234 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:36:53.939Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:36:53 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:50:31.155Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:50:31 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:55:07.583Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:55:07 +0000] "GET /api/users/1 HTTP/1.1" 401 143 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:57:15.032Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:57:15 +0000] "GET /api/users/1 HTTP/1.1" 401 143 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:57:50.555Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:57:50 +0000] "GET /api/users/1 HTTP/1.1" 401 143 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:58:15.686Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:58:15 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:58:32.885Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:58:32 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:58:50.459Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:58:50 +0000] "GET /api/users/1 HTTP/1.1" 200 235 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T01:58:56.298Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:01:58:56 +0000] "GET /api/users/2 HTTP/1.1" 200 234 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:02:03.886Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:02:03 +0000] "GET /api/users HTTP/1.1" 200 463 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:02:24.798Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:02:24 +0000] "GET /api/users HTTP/1.1" 200 463 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:02:31.714Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:02:31 +0000] "GET /api/users HTTP/1.1" 401 111 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:02:37.357Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:02:37 +0000] "GET /api/users HTTP/1.1" 200 463 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:03:39.533Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:03:39 +0000] "POST /api/users HTTP/1.1" 500 520 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:05:09.975Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:05:09 +0000] "POST /api/users HTTP/1.1" 500 520 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:05:33.132Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:05:33 +0000] "POST /api/users HTTP/1.1" 500 520 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:05:52.010Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:05:52 +0000] "POST /api/users HTTP/1.1" 400 93 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:10:34.890Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:10:34 +0000] "POST /api/users HTTP/1.1" 500 469 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:14:08.718Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:14:08 +0000] "POST /api/users HTTP/1.1" 400 103 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:14:26.612Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:14:26 +0000] "POST /api/users HTTP/1.1" 500 80 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:15:09.255Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:15:09 +0000] "POST /api/users HTTP/1.1" 400 103 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:15:54.867Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:15:54 +0000] "POST /api/users HTTP/1.1" 201 186 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:23:11.594Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:23:11 +0000] "PUT /api/users HTTP/1.1" 404 148 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:23:20.986Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:23:20 +0000] "PUT /api/users/4 HTTP/1.1" 500 1298 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:24:43.315Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:24:43 +0000] "PUT /api/users/4 HTTP/1.1" 400 178 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:24:49.046Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:24:49 +0000] "PUT /api/users/4 HTTP/1.1" 500 1011 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:34:49.588Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:34:49 +0000] "PUT /api/users/4 HTTP/1.1" 500 292 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:36:10.652Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:36:10 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:37:49.001Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:37:49 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:38:30.852Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:38:30 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:39:07.125Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:39:07 +0000] "PUT /api/users/4 HTTP/1.1" 500 446 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:39:48.936Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:39:48 +0000] "PUT /api/users/4 HTTP/1.1" 400 31 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:41:16.895Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:41:16 +0000] "PUT /api/users/4 HTTP/1.1" 400 82 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:41:35.920Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:41:35 +0000] "PUT /api/users/4 HTTP/1.1" 400 82 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:41:51.272Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:41:51 +0000] "PUT /api/users/4 HTTP/1.1" 400 82 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:42:15.610Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:42:15 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:42:57.853Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:42:57 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:43:23.377Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:43:23 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:45:02.679Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:45:02 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:45:18.893Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:45:18 +0000] "PUT /api/users/4 HTTP/1.1" 200 218 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:45:23.259Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:45:23 +0000] "PUT /api/users/4 HTTP/1.1" 200 218 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:45:26.959Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:45:26 +0000] "PUT /api/users/4 HTTP/1.1" 200 218 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:45:34.363Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:45:34 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:48:20.772Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:48:20 +0000] "PUT /api/users/4 HTTP/1.1" 500 69 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:48:39.728Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:48:39 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:48:48.289Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:48:48 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:48:52.880Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:48:52 +0000] "PUT /api/users/4 HTTP/1.1" 200 218 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:50:23.176Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:50:23 +0000] "PUT /api/users/4 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:50:28.300Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:50:28 +0000] "PUT /api/users/4 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:50:34.858Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:50:34 +0000] "PUT /api/users/4 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:50:39.495Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:50:39 +0000] "PUT /api/users/4 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:51:05.903Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:51:05 +0000] "PUT /api/users/4 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:51:52.792Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:51:52 +0000] "PUT /api/users/4 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:51:59.884Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:51:59 +0000] "PUT /api/users/5 HTTP/1.1" 400 70 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:52:35.587Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:52:35 +0000] "PUT /api/users/5 HTTP/1.1" 404 114 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:52:41.856Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:52:41 +0000] "PUT /api/users/3 HTTP/1.1" 404 114 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:53:21.751Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:53:21 +0000] "POST /api/users/ HTTP/1.1" 401 111 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:53:51.113Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:53:51 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:54:13.895Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:54:13 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:54:22.189Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:54:22 +0000] "POST /api/users/ HTTP/1.1" 201 236 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:54:43.474Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:54:43 +0000] "PUT /api/users/3 HTTP/1.1" 404 114 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T02:54:48.714Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:02:54:48 +0000] "PUT /api/users/6 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:01:28.638Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:01:28 +0000] "DELETE /api/users/6 HTTP/1.1" 500 1669 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:01:44.903Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:01:44 +0000] "DELETE /api/users/6 HTTP/1.1" 500 1669 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:01:54.648Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:01:54 +0000] "DELETE /api/users/6 HTTP/1.1" 500 1714 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:02:14.714Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:02:14 +0000] "DELETE /api/users/6 HTTP/1.1" 200 80 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:02:18.267Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:02:18 +0000] "DELETE /api/users/6 HTTP/1.1" 404 104 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:02:24.807Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:02:24 +0000] "POST /api/users/6 HTTP/1.1" 404 151 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:02:29.857Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:02:29 +0000] "POST /api/users/ HTTP/1.1" 201 237 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:11:51.631Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:11:51 +0000] "GET /api/users/me HTTP/1.1" 500 452 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:13:09.643Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:13:09 +0000] "GET /api/users/me HTTP/1.1" 500 452 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:13:42.168Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:13:42 +0000] "GET /api/users/me HTTP/1.1" 500 452 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:14:55.653Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:14:55 +0000] "GET /api/users/ HTTP/1.1" 200 692 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:15:01.139Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:15:01 +0000] "GET /api/users/me HTTP/1.1" 500 452 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:15:36.683Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:15:36 +0000] "GET /api/users/2 HTTP/1.1" 200 234 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:16:37.221Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:16:37 +0000] "GET /api/users/2 HTTP/1.1" 200 234 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:16:41.672Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:16:41 +0000] "GET /api/users/me HTTP/1.1" 200 235 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:18:14.235Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:18:14 +0000] "GET /api/users/me HTTP/1.1" 200 235 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:18:22.884Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:18:22 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:18:31.391Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:18:31 +0000] "POST /api/auth/ HTTP/1.1" 401 106 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:18:37.763Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:18:37 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:18:49.679Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:18:49 +0000] "POST /api/auth/ HTTP/1.1" 401 106 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:18:55.377Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:18:55 +0000] "POST /api/auth/ HTTP/1.1" 401 106 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:19:36.664Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:19:36 +0000] "POST /api/auth/ HTTP/1.1" 401 106 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:19:43.459Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:19:43 +0000] "POST /api/auth/ HTTP/1.1" 201 251 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:24:14.422Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:24:14 +0000] "GET /api/users/me HTTP/1.1" 200 235 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:25:37.683Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:25:37 +0000] "GET /api/users/me HTTP/1.1" 200 235 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:25:40.644Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:25:40 +0000] "POST /api/auth/ HTTP/1.1" 500 1425 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:30:47.744Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:30:47 +0000] "POST /api/auth/ HTTP/1.1" 500 408 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:31:36.580Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:31:36 +0000] "POST /api/auth/ HTTP/1.1" 500 451 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:32:27.146Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:32:27 +0000] "POST /api/auth/ HTTP/1.1" 500 407 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:33:11.315Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:33:11 +0000] "POST /api/auth/ HTTP/1.1" 401 114 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:33:44.312Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:33:44 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:43:20.214Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:43:20 +0000] "POST /api/users/unblock/7 HTTP/1.1" 200 266 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-23T03:43:26.361Z] INFO: ::ffff:127.0.0.1 - - [23/Apr/2026:03:43:26 +0000] "POST /api/users/block/7 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:28:34.175Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:28:34 +0000] "POST /api/users/block/7 HTTP/1.1" 401 198 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:32:13.917Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:32:13 +0000] "POST /api/users/block/7 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:32:21.052Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:32:21 +0000] "POST /api/users/unblock/7 HTTP/1.1" 401 198 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:34:42.167Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:34:42 +0000] "POST /api/users/unblock/7 HTTP/1.1" 200 266 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:35:42.632Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:35:42 +0000] "POST /api/auth/ HTTP/1.1" 201 251 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:35:55.374Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:35:55 +0000] "POST /api/users/unblock/7 HTTP/1.1" 401 111 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:35:59.586Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:35:59 +0000] "POST /api/users/block/7 HTTP/1.1" 401 111 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:36:05.431Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:36:05 +0000] "POST /api/users/block/7 HTTP/1.1" 200 268 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T01:36:10.443Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:01:36:10 +0000] "POST /api/users/unblock/7 HTTP/1.1" 200 266 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:12:12.962Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:12:12 +0000] "POST /api/users/unblock/7 HTTP/1.1" 200 266 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:14:28.485Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:14:28 +0000] "POST /api/users/unblock/7 HTTP/1.1" 200 266 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:33:41.563Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:33:41 +0000] "POST /api/users/unblock/7 HTTP/1.1" 200 266 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:34:00.595Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:34:00 +0000] "GET /api/users/ HTTP/1.1" 200 690 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:34:43.890Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:34:43 +0000] "POST /api/auth HTTP/1.1" 201 251 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:34:57.428Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:34:57 +0000] "POST /api/auth HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:35:00.422Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:35:00 +0000] "POST /api/auth HTTP/1.1" 400 1307 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:35:02.796Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:35:02 +0000] "POST /api/auth HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:35:07.495Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:35:07 +0000] "POST /api/auth HTTP/1.1" 400 171 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T03:42:53.305Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:03:42:53 +0000] "POST /api/auth HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:28:57.631Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:28:57 +0000] "POST /api/auth HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:29:05.407Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:29:05 +0000] "POST /api/auth HTTP/1.1" 400 49 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:44:28.420Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:44:28 +0000] "POST /api/auth HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:44:35.046Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:44:35 +0000] "POST /api/auth HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:44:38.488Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:44:38 +0000] "POST /api/auth HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:44:49.899Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:44:49 +0000] "POST /api/auth/register HTTP/1.1" 400 171 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:44:54.735Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:44:54 +0000] "POST /api/auth/register HTTP/1.1" 400 110 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:50:00.113Z] INFO: ::1 - - [24/Apr/2026:05:50:00 +0000] "POST /auth HTTP/1.1" 404 144 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T05:50:55.670Z] INFO: ::1 - - [24/Apr/2026:05:50:55 +0000] "POST /auth HTTP/1.1" 404 144 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T05:51:19.785Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:05:51:19 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
+[2026-04-24T05:51:39.456Z] INFO: ::1 - - [24/Apr/2026:05:51:39 +0000] "POST /auth/register HTTP/1.1" 404 153 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T05:54:04.067Z] INFO: ::1 - - [24/Apr/2026:05:54:04 +0000] "POST /auth/register HTTP/1.1" 404 153 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:03:56.928Z] INFO: ::1 - - [24/Apr/2026:06:03:56 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:03:57.010Z] INFO: ::1 - - [24/Apr/2026:06:03:57 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:03:57.014Z] INFO: ::1 - - [24/Apr/2026:06:03:57 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:03:57.016Z] INFO: ::1 - - [24/Apr/2026:06:03:57 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:03:57.022Z] INFO: ::1 - - [24/Apr/2026:06:03:57 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 4203 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:03:57.364Z] INFO: ::1 - - [24/Apr/2026:06:03:57 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:04:08.867Z] INFO: ::1 - - [24/Apr/2026:06:04:08 +0000] "POST /auth HTTP/1.1" 404 144 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:07:44.304Z] INFO: ::1 - - [24/Apr/2026:06:07:44 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:07:44.390Z] INFO: ::1 - - [24/Apr/2026:06:07:44 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:07:44.393Z] INFO: ::1 - - [24/Apr/2026:06:07:44 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:07:44.395Z] INFO: ::1 - - [24/Apr/2026:06:07:44 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:07:44.401Z] INFO: ::1 - - [24/Apr/2026:06:07:44 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 4325 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:07:44.632Z] INFO: ::1 - - [24/Apr/2026:06:07:44 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:07:50.319Z] INFO: ::1 - - [24/Apr/2026:06:07:50 +0000] "POST /api/auth HTTP/1.1" 401 106 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:08:07.454Z] INFO: ::1 - - [24/Apr/2026:06:08:07 +0000] "POST /api/auth HTTP/1.1" 201 250 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:11:48.714Z] INFO: ::1 - - [24/Apr/2026:06:11:48 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:11:48.847Z] INFO: ::1 - - [24/Apr/2026:06:11:48 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:11:48.851Z] INFO: ::1 - - [24/Apr/2026:06:11:48 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:11:48.856Z] INFO: ::1 - - [24/Apr/2026:06:11:48 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 12000 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:11:48.858Z] INFO: ::1 - - [24/Apr/2026:06:11:48 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:11:49.166Z] INFO: ::1 - - [24/Apr/2026:06:11:49 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:11:57.014Z] INFO: ::1 - - [24/Apr/2026:06:11:57 +0000] "GET /api/users/me HTTP/1.1" 401 111 "http://localhost:3000/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+[2026-04-24T06:13:06.875Z] INFO: ::ffff:127.0.0.1 - - [24/Apr/2026:06:13:06 +0000] "POST /api/auth/ HTTP/1.1" 201 250 "-" "Thunder Client (https://www.thunderclient.com)"
